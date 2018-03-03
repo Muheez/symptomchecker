@@ -37,6 +37,7 @@
         </div>
     </div>
     <div id="main">
+        <!--These are the main views, add class "active" to each <li> to show the view -->
         <ul class="views">
             <li class="view choose-disease">
                 <h1 class="header">Choose a Disease to Start Test</h1>
@@ -47,7 +48,7 @@
                 </select> 
                 <button class="def-button start">Start</button>
             </li>
-            <li class="view test-view active">
+            <li class="view test-view">
                 <div class="loader"></div>
                 <div class="question-card">
                     <h4 class="question">Do you have headaches?</h4>
@@ -59,6 +60,11 @@
                 <div class="progress-bar">
                     <div class="progress"></div>
                 </div>
+            </li>
+            <li class="view result-view active">
+                <h2 class="header">The chance that you have Malaria is</h2>
+                <p class="result">50%</p>
+                <h4 class="compliment">You might have malaria.</h4>
             </li>
         </ul>
     </div>
