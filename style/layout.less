@@ -1,0 +1,34 @@
+#left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+}
+
+#main {
+    position: relative;
+    box-sizing: border-box;
+    width: 960px;
+    margin-left: 280px;
+
+    .views {
+        position: relative;
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        .view {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: none;
+        }
+
+        .view.active {
+            display: block;
+        }
+    }
+}
