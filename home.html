@@ -9,6 +9,37 @@
     <title>Home | Symptom Checker</title>
 </head>
 <body>
+    <nav class="top-nav view clearfix">
+        <ul class="nav-links clearfix">
+            <li class="link login" data-ref="login-modal">Login</li>
+            <li class="link signup" data-ref="signup-modal">Signup</li>
+        </ul>
+    </nav>
+    <div class="masthead view">
+        <div class="manifest">
+            <h3 class="header">Symptom Checker</h3>
+            <p class="body">Check your symptoms against different diseases.</p>
+        </div>
+    </div>
+    <div class="view login-modal">
+        <div class="close-btn close"></div>
+        <form class="login-form" id="login">
+            <label for="login" class="header">login</label>
+            <input type="email" name="email" class="text-field" placeholder="Email">
+            <input type="password" name="password" class="text-field" placeholder="Password">
+            <input type="submit" class="def-button" value="Login">
+        </form>
+    </div>
+    <div class="view signup-modal">
+        <div class="close-btn close"></div>
+        <form class="signup-form" id="signup">
+            <label for="signup" class="header">signup</label>
+            <input type="text" name="username" class="text-field" placeholder="Username">
+            <input type="email" name="email" class="text-field" placeholder="Email">
+            <input type="password" name="password" class="text-field" placeholder="Password">
+            <input type="submit" class="def-button" value="Login">
+        </form>
+    </div>
     
 <script src="script/home.js"></script>
 </body>
