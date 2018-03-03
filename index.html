@@ -38,7 +38,7 @@
     </div>
     <div id="main">
         <ul class="views">
-            <li class="view active choose-disease">
+            <li class="view choose-disease">
                 <h1 class="header">Choose a Disease to Start Test</h1>
                 <select name="disease" class="select text-field">
                     <option value="">Choose Disease</option>
@@ -46,6 +46,19 @@
                     <option value="typhoid">Typhoid</option>
                 </select> 
                 <button class="def-button start">Start</button>
+            </li>
+            <li class="view test-view active">
+                <div class="loader"></div>
+                <div class="question-card">
+                    <h4 class="question">Do you have headaches?</h4>
+                    <div class="options clearfix">
+                        <button class="def-button option yes">Yes</button>
+                        <button class="def-button option no">No</button>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
             </li>
         </ul>
     </div>
